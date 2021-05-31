@@ -1,0 +1,591 @@
+
+
+    .logo-ohmyfood img {
+        padding: 20px;
+        margin:0px 50px 0px 50px;
+        
+    }
+    .search-country{
+        font-family: "roboto";
+        font-size: 16px;
+        padding: 20px 90px 20px 100px;
+        background-color: rgb(218, 214, 214);
+    }
+    .grid-container-header {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+        gap: 11px 0px;
+        justify-items: center;
+        font-family: "roboto";
+        background-color: rgb(243, 240, 240);
+        grid-template-areas:
+          "line-1-reservez"
+          "line-2-decouvrez"
+          "bouton-explorer";
+      }
+      
+    .line-1-reservez { 
+        grid-area: line-1-reservez;
+        margin-top: 40px;
+        font-size: 31px;
+        font-weight: bold ;
+        text-align: center;
+    }
+      
+    .line-2-decouvrez {
+        grid-area: line-2-decouvrez;
+        text-align: center;
+        font-size: 18px; }
+      
+    .bouton-explorer { 
+        grid-area: bouton-explorer;
+        color: white;
+        background-color: #686868;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none;
+        justify-content: center;
+        padding: 15px 20px 20px 20px;
+        border-radius: 30px 30px 30px 30px;
+        cursor: pointer; 
+        box-shadow:0 5px 10px grey;
+        transition-duration: 0.2s;
+    }
+     .bouton-explorer:hover{
+         background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));
+         box-shadow: 0 5px 20px rgb(87, 85, 85) ;
+        }
+   
+    
+        
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px
+}
+.aside-title{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+}
+.aside-step{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.aside-bouton {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #e9e9e9;
+    border-radius: 30px;
+    text-align: justify;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-weight: bold;
+    padding: 27px 15px;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+a:hover{
+    background-color: #cbaeee;
+}
+.aside-circle{
+    position: absolute;
+    left: 17px;
+    margin-top: -9px;
+    background: #9356dc;
+    border-radius: 100%;
+    color: #fff;
+    height: 21px;
+    width: 10px;
+    line-height: 1.67;
+    padding: 6px 10px;
+    font-weight: bold;
+}
+.aside-icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin: 0 20px 0 25px;
+    position: absolute;
+    font-size: 20px;
+}
+.fas{
+    font-weight: bold;
+}
+.aside-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px
+}
+
+
+  
+.image-btn-new1{
+    position: absolute;
+    top: 1027px;
+    right: 42px;
+    background: #99e2d0;
+    color: #2c9c81;
+    padding: 3px 10px;
+    font-weight: bold;
+    z-index: 999;
+  }
+  .image-btn-new2{
+    position: absolute;
+    top: 1313px;
+    right: 42px;
+    background: #99e2d0;
+    color: #2c9c81;
+    padding: 3px 10px;
+    font-weight: bold;
+    z-index: 999;
+  }
+  
+  .far .fa-heart{
+    position: relative;
+    margin-right: 22px;
+    margin-top: 4px;
+  }
+  
+    
+  .grid-container-restaurants {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        margin-top: 40px;
+        font-family: "roboto";
+        background-color: rgb(243, 240, 240);
+        grid-template-areas:
+          "restaurant"
+          "la-palette"
+          "la-note"
+          "a-la-française"
+          "le-delice";
+      }
+      
+      .restaurant { 
+          grid-area: restaurant;
+          padding-top: 50px;
+          margin-left: 20px;
+        font-size: 25px;
+        font-weight: 900;
+        }
+      
+      .la-palette { grid-area: la-palette;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: bold;
+        margin:auto;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+        
+     }
+     
+      
+      .la-note { 
+        grid-area: la-note;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: bold;
+        margin:auto;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+        
+        }
+      
+      .a-la-française {
+        grid-area: a-la-française;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: bold;
+        margin:auto;
+        margin-top: 20px;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+    }
+      
+      .le-delice { 
+        grid-area: le-delice;
+        font-family: "roboto";
+        font-size: 20px;
+        font-weight: bold;
+        margin:auto;
+        background-color: white;
+        border-radius: 0px 0px 20px 20px;
+        margin-bottom: 9px;
+        }
+      
+    .grid-container-restaurants img{
+        width: 320px;
+        height:180px;
+        margin-bottom: 20px;
+        object-fit: cover;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .la-palette i{
+        margin-left: 142px;
+        font-size: 31px;
+    }
+    .la-note i{
+        margin-left: 176px;
+        font-size: 31px;
+    }
+    .a-la-française i{
+        margin-left: 168px;
+        font-size: 31px;
+        margin-bottom: 9px;
+    }
+    .le-delice i{
+        margin-left: 131px;
+        font-size: 31px;
+       
+    }
+    
+          
+    .restaurant-title{
+        margin-left: 20px;
+    }
+    .place-name{
+        margin-left: 20px;
+        padding-bottom: 13px;
+        font-weight: 200;
+        font-size: 18px;
+    }
+
+    .grid-container-footer {
+        display: grid;
+        background-color: rgb(41, 39, 39);
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+        gap: 0px 0px;
+        color: white;
+        font-size: 17px;
+        font-family: "roboto";
+        grid-template-areas:
+          "logo"
+          "proposer"
+          "devenir"
+          "mention-legale"
+          "contact";
+      }
+      
+      .logo { grid-area: logo;
+        filter: invert(1);
+        max-width: 150px;
+    }
+      .logo img{
+          font-size: 30px;
+      }
+      .proposer { 
+        grid-area: proposer;
+        margin: 20px 30px 7px 30px;}
+      
+      .devenir { 
+        grid-area: devenir;
+        margin-left: 30px;
+        margin-bottom: 7px; }
+      
+      .mention-legale { 
+        grid-area: mention-legale;
+        margin-left: 30px;
+        margin-bottom: 7px }
+      
+      .contact { 
+        grid-area: contact;
+        margin-left: 30px;
+        margin-bottom: 40px }
+
+.grid-container-footer i{
+    color: white;
+    margin-right: 13px;
+}
+.grid-container-footer .logo img{
+    width: 137px;
+    margin-top: 20px;
+    margin-left: 30px;}
+
+.logo-carte-menu{
+    padding: 20px 50px 20px 50px;
+}
+
+ .image-entete img{
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     z-index: 100;
+ }   
+.grid-container-menu {
+    display: grid;
+    background-color: rgb(243, 240, 240);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+    gap: 15px 0px;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: "roboto";
+    width: auto;
+    z-index: 110;
+   
+    grid-template-areas:
+         "titre-menu"
+        "entrées-titre"
+        "entrées-1"
+        "entrées-2"
+        "entrées-3"
+        "plat-titre"
+        "plat-1"
+        "plat-2"
+        "plat-3"
+        "dessert-titre"
+        "dessert-1"
+        "derssert-2"
+        "dessert3"
+        "bouton-commander";  
+          }
+          
+    .titre-menu { 
+        grid-area: a-la-française-titre-menu;
+        
+        ; 
+    }
+    .menu-title i {
+        margin-left: 40px;
+        
+    }
+    
+    .note{
+        font-weight: 100;
+        margin-top: 8px;
+        font-size: 15px;
+    }
+    .cash{ 
+        position: relative;
+        margin-left: 237px;
+        margin-top: -20px;
+    }
+    .check i{
+        font-size: 25px;
+        color: white;
+        
+    }
+    
+    
+    .menu-title{
+        font-family: "Shrikhand";
+        font-size: 25px;
+        padding: 20px 0 20px 20px;
+    }
+          
+    .entrées-titre { 
+        grid-area: entrées-titre;
+        padding-left: 10px; 
+    }
+    .entrées-titre::after{
+        content: "";
+        border-bottom: 2px solid #99e2d0;
+        display: block;
+        padding-top: 3px;
+        width: 40px;
+    }
+    
+    
+    .entrées-1 {
+        grid-area: entrées-1;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 11px 0px 0px 15px;
+    }
+    
+        
+    
+    
+          
+    .entrées-2 { grid-area: entrées-2;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px;
+    }
+    .entrées-2 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }      
+    .entrées-3 { grid-area: entrées-3;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px;
+    }
+    .entrées-3 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .plat-titre { grid-area: plat-titre;
+        margin-top: 20px;
+        padding-top: 15px;
+        padding-left: 10px;
+    }
+    .plat-titre::after{
+        content: "";
+        border-bottom: 2px solid #99e2d0;
+        display: block;
+        padding-top: 3px;
+        width: 40px;
+    }
+          
+    .plat-1 { grid-area: plat-1;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px;
+    }
+    .plat-1 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .plat-2 { grid-area: plat-2;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px;
+    }
+    .plat-2 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .plat-3 { grid-area: plat-3;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px
+    }
+    .plat-3 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .dessert-titre { grid-area: dessert-titre;
+        margin-top: 20px;
+        padding-top: 15px;
+       
+        padding-left: 10px;
+    }
+    .dessert-titre::after{
+        content: "";
+        border-bottom: 2px solid #99e2d0;
+        display: block;
+        padding-top: 3px;
+        width: 40px;
+    }      
+    .dessert-1 { grid-area: dessert-1;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px
+    }
+    .dessert-1 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .derssert-2 { grid-area: derssert-2; 
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px
+    }
+    .derssert-2 .check i{
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .dessert3 { grid-area: dessert3;
+        border: solid white;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 18px 15px 18px 15px
+    }
+    .dessert3 .check i {
+        display: none;
+        width: 30%;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+          
+    .bouton-commander { grid-area: bouton-commander;
+        color: white;
+        background-color: #686868;
+        background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+        font-weight: bold;
+        font-size: 18px;
+        justify-content: center;
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 30px 30px 30px 30px;
+        width: 100px;
+        height: 35px;
+        padding:11px 40px 0px 40px;
+        margin: 25px 0px 0px 90px;}
+        
+.bouton-commander:hover{
+background-image: linear-gradient(0deg,rgba(168, 129, 216, 0.9),rgba(247, 154, 220, 0.9));
+box-shadow: 0 5px 20px rgb(87, 85, 85) ;}
+
+
+          
+
+
+    
+
+          
+    
+          
+
