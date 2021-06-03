@@ -1,15 +1,26 @@
+body{
+    font-family: "roboto";
+}
 
-
-    .logo-ohmyfood img {
+.logo-ohmyfood img {
         padding: 20px;
         margin:0px 50px 0px 50px;
         
     }
-    .search-country{
-        font-family: "roboto";
-        font-size: 16px;
-        padding: 20px 90px 20px 100px;
-        background-color: rgb(218, 214, 214);
+    
+
+    input {
+        font-size: 17px;
+        padding: 20px 75px 20px 75px;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(225, 221, 221);
+        border: none;
+    }
+    
+    input::placeholder{
+        color: black;
+        
     }
     .grid-container-header {
         display: grid;
@@ -18,6 +29,7 @@
         gap: 11px 0px;
         justify-items: center;
         font-family: "roboto";
+        width: 100%;
         background-color: rgb(243, 240, 240);
         grid-template-areas:
           "line-1-reservez"
@@ -36,7 +48,8 @@
     .line-2-decouvrez {
         grid-area: line-2-decouvrez;
         text-align: center;
-        font-size: 18px; }
+        font-size: 18px;
+    font-weight: 200; }
       
     .bouton-explorer { 
         grid-area: bouton-explorer;
@@ -128,7 +141,6 @@ a:hover{
 }
 
 
-  
 .image-btn-new1{
     position: absolute;
     top: 1027px;
@@ -141,7 +153,7 @@ a:hover{
   }
   .image-btn-new2{
     position: absolute;
-    top: 1313px;
+    top: 1334px;
     right: 42px;
     background: #99e2d0;
     color: #2c9c81;
@@ -234,24 +246,39 @@ a:hover{
         border-radius: 20px 20px 0px 0px;
     }
     .la-palette i{
-        margin-left: 142px;
+        margin-left: 132px;
         font-size: 31px;
     }
     .la-note i{
-        margin-left: 176px;
+        margin-left: 163px;
         font-size: 31px;
     }
     .a-la-française i{
-        margin-left: 168px;
+        margin-left: 152px;
         font-size: 31px;
         margin-bottom: 9px;
     }
     .le-delice i{
-        margin-left: 131px;
+        margin-left: 122px;
         font-size: 31px;
        
     }
-    
+    .fa-heart {
+        color: rgb(226, 215, 215);
+        background-color: rgb(247, 243, 243);
+        border-radius: 50%;
+        padding:.2em;
+       
+    }
+    .fa-heart::before {
+        content: "\f004";
+        font-weight: bold;
+        transition: color 1s ease-out;
+    }
+    .fa-heart:hover::before{
+        color: violet;
+        cursor: pointer;
+    }
           
     .restaurant-title{
         margin-left: 20px;
@@ -272,6 +299,7 @@ a:hover{
         color: white;
         font-size: 17px;
         font-family: "roboto";
+        margin-bottom: 0px;
         grid-template-areas:
           "logo"
           "proposer"
@@ -318,24 +346,35 @@ a:hover{
 .logo-carte-menu{
     padding: 20px 50px 20px 50px;
 }
+.arrow-logo i{
+    padding: 20px;
+    width: auto;
+}
+.arrow-logo img{
+    padding: 20px;
+    width: auto;
+}
 
  .image-entete img{
      width: 100%;
      height: 300px;
      object-fit: cover;
-     z-index: 100;
+     
  }   
 .grid-container-menu {
     display: grid;
     background-color: rgb(243, 240, 240);
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 1fr;
+    grid-template-rows: 0.5fr 0.2fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
     gap: 15px 0px;
     border-radius: 30px;
     padding: 10px;
     font-family: "roboto";
     width: auto;
-    z-index: 110;
+    position: relative;
+    top: -55px;
+    text-overflow: ellipsis;
+    
    
     grid-template-areas:
          "titre-menu"
@@ -374,13 +413,35 @@ a:hover{
         margin-left: 237px;
         margin-top: -20px;
     }
+    
+
     .check i{
         font-size: 25px;
         color: white;
+        width: 9%;
+        height: 19px;
+        background-color: #99e2d0;
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+        padding: 30px 30px 30px 30px;
+        margin-left: 265px;
+        margin-top: -60px;
+        overflow: hidden;
+       
+    }
         
+
+       
+        
+    
+    .fa-stack .fa-circle{
+        color: #99e2d0;
+    }
+    .fa-stack{
+        font-size: 20px;
     }
     
-    
+
     .menu-title{
         font-family: "Shrikhand";
         font-size: 25px;
@@ -403,38 +464,84 @@ a:hover{
     .entrées-1 {
         grid-area: entrées-1;
         border: solid white;
+        width: auto;
+        height: 60px;
         background-color: white;
         border-radius: 20px;
         font-weight: 900;
         font-size: 17px;
         padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        position: relative;
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+    }
+    @keyframes fadein {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;
+        }
     }
     
+    
+    .entrées-1 .check i{
         
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+
+    }    
     
     
           
     .entrées-2 { grid-area: entrées-2;
         border: solid white;
         background-color: white;
+        width: auto;
+        height: 60px;
         border-radius: 20px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px;
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 1s;
+       
+         
     }
     .entrées-2 .check i{
+        
         display: none;
-        width: 30%;
         border-bottom-right-radius: 15px;
         border-top-right-radius: 15px;
+        
     }      
     .entrées-3 { grid-area: entrées-3;
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px;
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 2s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 1.5s;
+        
     }
     .entrées-3 .check i{
         display: none;
@@ -460,9 +567,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px;
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 2s;
     }
     .plat-1 .check i{
         display: none;
@@ -475,9 +591,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px;
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 2.5s;
     }
     .plat-2 .check i{
         display: none;
@@ -490,9 +615,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 3s;
     }
     .plat-3 .check i{
         display: none;
@@ -518,9 +652,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 3.5s;
     }
     .dessert-1 .check i{
         display: none;
@@ -533,9 +676,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 4s;
     }
     .derssert-2 .check i{
         display: none;
@@ -548,9 +700,18 @@ a:hover{
         border: solid white;
         background-color: white;
         border-radius: 20px;
+        width: auto;
+        height: 60px;
         font-weight: 900;
         font-size: 17px;
-        padding: 18px 15px 18px 15px
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 4.5s;
     }
     .dessert3 .check i {
         display: none;
@@ -566,26 +727,77 @@ a:hover{
         font-weight: bold;
         font-size: 18px;
         justify-content: center;
-        padding-top: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 15px 20px 20px 20px;
         border-radius: 30px 30px 30px 30px;
         width: 100px;
         height: 35px;
         padding:11px 40px 0px 40px;
-        margin: 25px 0px 0px 90px;}
+        margin: 40px 0px 40px 90px;}
         
 .bouton-commander:hover{
 background-image: linear-gradient(0deg,rgba(168, 129, 216, 0.9),rgba(247, 154, 220, 0.9));
 box-shadow: 0 5px 20px rgb(87, 85, 85) ;}
 
-
-          
-
-
+.grid-container-ok {
+    display: grid;
+    grid-template-columns: 2.2fr 0.4fr 0.4fr;
+    grid-template-rows: 0.2fr 0.2fr;
+    gap: 0px 0px;
+    border: solid white;
+        width: auto;
+        height: 60px;
+        background-color: white;
+        border-radius: 20px;
+        font-weight: 900;
+        font-size: 17px;
+        padding: 11px 0px 0px 15px;
+        box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+        position: relative;
+        animation: fadein 1s;
+        -moz-animation: fadein 2s; 
+        -webkit-animation: fadein 2s; 
+        -o-animation: fadein 2s;
+        animation-fill-mode: both;
+        animation-delay: 0.5s;
+    grid-template-areas:
+      "menu-title-bold price ok"
+      "menu-subtitle price ok";
+  }
+  
+  .menu-title-bold { grid-area: menu-title-bold; }
+  
+  .menu-subtitle { grid-area: menu-subtitle; }
+  
+  .price { grid-area: price; }
+  
+  .ok { 
+      
+    grid-area: ok;
+    display: block;
+    position: relative;
+    border: solid #99e2d0;
+    background-color: #99e2d0;
+    border-radius: 0px 20px 20px 0px;
+    height: 45px;
+}
+.ok-check{
+    grid-area: ok;
+    display: block;
+    position: relative;
+    border-radius: 0px 20px 20px 0px;
     
-
-          
-    
-          
-
+}
+.ok-remplissage{
+    transition: all 0.3s linear 1s;
+    background-color: #99e2d0;
+    width: 0;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.ok-check:hover .ok-remplissage{
+    width: 50%;
+}
+  
+  
