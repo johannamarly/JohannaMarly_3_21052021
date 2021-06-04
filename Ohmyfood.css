@@ -9,7 +9,7 @@ body{
     }
     
     .search-input {
-        font-family: FontAwesome, roboto, sans-serif;
+        font-family: FontAwesome, "roboto", sans-serif;
     }
 
     input {
