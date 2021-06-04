@@ -1,0 +1,96 @@
+.plat {
+    cursor: pointer;
+
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px 5px rgb(0 0 0 / 10%);
+    height: 73px;
+
+    animation: fadein 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.2s;
+}
+
+.plat-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.plat-content {
+    padding: 8px 12px;
+    font-weight: 900;
+    font-size: 17px;
+    width: 95%;
+    transition: width ease 0.5s;
+}
+
+.plat-title, .plat-description {
+    margin: 4px 0px;
+}
+
+.plat-description {
+    display: flex;
+}
+
+.plat-description-content {
+    flex-grow: 1;
+    font-weight: 100;
+    margin-top: 8px;
+    font-size: 15px;
+    margin: 0;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.plat-price {
+ display: flex;
+ align-items: flex-end;
+}
+
+.plat-price > p {
+    margin: 0;
+}
+
+.plat-validate {
+    background-color: #99e2d0;
+    flex-grow: 1;
+    width: 0%;
+    height: 73px;
+    border-radius: 0 20px 20px 0px;
+
+    display: flex;
+    align-items: center;
+
+    visibility: hidden;
+    transition-delay: 0.5s;
+
+}
+
+.plat-validate > i {
+    color: white;
+    margin: auto;
+    font-size: 24px;
+}
+
+/* https://stackoverflow.com/questions/6910049/on-a-css-hover-event-can-i-change-another-divs-styling */
+.plat:hover .plat-content {
+    width: 75%;
+}
+
+.plat:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+}
+
+@keyframes fadein {
+    from {
+        transform: translate(0px, 10px);
+        opacity:0;
+    }
+    to {
+        transform: translate(0px, 0px);
+        opacity:1;
+    }
+}
