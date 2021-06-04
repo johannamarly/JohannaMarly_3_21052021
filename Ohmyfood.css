@@ -8,6 +8,9 @@ body{
         
     }
     
+    .search-input {
+        font-family: FontAwesome, roboto, sans-serif;
+    }
 
     input {
         font-size: 17px;
@@ -19,9 +22,9 @@ body{
     }
     
     input::placeholder{
-        color: black;
-        
+        color: black;        
     }
+
     .grid-container-header {
         display: grid;
         grid-template-columns: 1fr;
