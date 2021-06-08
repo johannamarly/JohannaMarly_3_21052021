@@ -1,0 +1,296 @@
+body{
+    font-family: "roboto";
+}
+
+
+.search-input{
+     font-family:"FontAwesome", "roboto";
+}
+
+input {
+    font-size: 17px;
+    padding: 20px 75px 20px 75px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(225, 221, 221);
+    border: none;
+}
+    
+input::placeholder{
+    color: black;
+        
+}
+
+.grid-container-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr;
+    gap: 11px 0px;
+    justify-items: center;
+    font-family: "roboto";
+    width: 100%;
+    background-color: rgb(243, 240, 240);
+    grid-template-areas:
+         "line-1-reservez"
+        "line-2-decouvrez"
+        "bouton-explorer";
+ }
+      
+ .line-1-reservez { 
+    grid-area: line-1-reservez;
+    margin-top: 40px;
+    font-size: 31px;
+    font-weight: bold ;
+    text-align: center;
+}
+      
+.line-2-decouvrez {
+    grid-area: line-2-decouvrez;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 200; }
+      
+.bouton-explorer { 
+    grid-area: bouton-explorer;
+    color: white;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
+    cursor: pointer; 
+    box-shadow:0 5px 10px grey;
+    transition-duration: 0.2s;
+}
+.bouton-explorer:hover{
+    background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));
+    box-shadow: 0 5px 20px rgb(87, 85, 85) ;
+}
+   
+    
+        
+.aside {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 10px 5px
+}
+.aside-title{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 15px;
+}
+.aside-step{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.aside-bouton {
+    flex: 1 0 auto;
+    margin-bottom: 20px;
+    text-decoration: none;
+    background: #e9e9e9;
+    border-radius: 30px;
+    text-align: justify;
+    margin-left: 0;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+    color: #000;
+    font-weight: bold;
+    padding: 27px 15px;
+    box-shadow: 0 5px 15px 0 #c3c3c3;
+}
+a:hover{
+    background-color: #cbaeee;
+}
+.aside-circle{
+    position: absolute;
+    left: 17px;
+    margin-top: -9px;
+    background: #9356dc;
+    border-radius: 100%;
+    color: #fff;
+    height: 21px;
+    width: 10px;
+    line-height: 1.67;
+    padding: 6px 10px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.aside-icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: grey;
+    margin: 0 20px 0 25px;
+    position: absolute;
+    font-size: 20px;
+}
+.fas{
+    font-weight: bold;
+}
+.aside-text{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 14px
+}
+
+.img-btn{
+    position: absolute ;
+    top: 15;
+    right: 15;
+    background: #99e2d0;
+    color: #2c9c81;
+    padding: 3px 10px;
+    font-weight: bold;
+    z-index: 999;
+
+}
+.img-btn-container{
+    position: relative;
+}
+
+.grid-container-restaurants {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    margin-top: 40px;
+    font-family: "roboto";
+    background-color: rgb(243, 240, 240);
+    grid-template-areas:
+        "restaurant"
+        "la-palette"
+        "la-note"
+        "a-la-française"
+        "le-delice";
+}
+      
+.restaurant { 
+    grid-area: restaurant;
+    padding-top: 50px;
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+      
+.la-palette { grid-area: la-palette;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+        
+}
+     
+      
+.la-note { 
+    grid-area: la-note;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+        
+}
+      
+.a-la-française {
+    grid-area: a-la-française;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+      
+.le-delice { 
+    grid-area: le-delice;
+    font-family: "roboto";
+    font-size: 20px;
+    font-weight: bold;
+    margin:auto;
+    background-color: white;
+    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 9px;
+}
+      
+.grid-container-restaurants img{
+    width: 320px;
+    height:180px;
+    margin-bottom: 20px;
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.la-palette i{
+    margin-left: 132px;
+    font-size: 31px;
+}
+.la-note i{
+    margin-left: 163px;
+    font-size: 31px;
+}
+.a-la-française i{
+    margin-left: 152px;
+    font-size: 31px;
+    margin-bottom: 9px;
+}
+.le-delice i{
+    margin-left: 122px;
+    font-size: 31px;
+       
+}
+.restaurant-title{
+    margin-left: 20px;
+}
+
+.place-name{
+    position: relative;
+    margin-left: 20px;
+    padding-bottom: 13px;
+    font-weight: 200;
+    font-size: 18px;
+}
+i.far {
+    font-size: 2rem;
+    font-style: normal;
+    font-family: fontawesome;
+  }
+  
+  .far:before {
+    color: transparent;
+    position: absolute;
+    bottom: 22;
+    right: 20;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));
+    cursor: pointer;
+   
+    
+  }
+
+
+
+
+      
+
+
+    
+
+
+
+
+
+
+   
+  

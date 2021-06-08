@@ -1,0 +1,84 @@
+.logo-ohmyfood img {
+    padding: 20px 30px 20px 46px;
+    margin:0px 50px 0px 50px;
+    
+}
+
+
+  .grid-container-footer {
+    display: grid;
+    background-color: rgb(41, 39, 39);
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    gap: 0px 0px;
+    color: white;
+    font-size: 17px;
+    font-family: "roboto";
+    margin-bottom: 0px;
+    grid-template-areas:
+        "logo"
+        "proposer"
+         "devenir"
+         "mention-legale"
+         "contact";
+}
+      
+.logo { 
+    grid-area: logo;
+    filter: invert(1);
+    max-width: 150px;
+}
+.logo img{
+    font-size: 30px;
+}
+.proposer { 
+    grid-area: proposer;
+    margin: 20px 30px 7px 30px;}
+      
+.devenir { 
+    grid-area: devenir;
+    margin-left: 30px;
+    margin-bottom: 7px; }
+
+.mention-legale { 
+    grid-area: mention-legale;
+    margin-left: 30px;
+    margin-bottom: 7px }
+      
+.contact { 
+    grid-area: contact;
+     margin-left: 30px;
+    margin-bottom: 40px }
+
+.grid-container-footer i{
+    color: white;
+    margin-right: 13px;
+}
+.grid-container-footer .logo img{
+    width: 137px;
+    margin-top: 20px;
+    margin-left: 30px;}
+
+.logo-carte-menu{
+    padding: 20px 50px 20px 50px;
+}
+
+
+
+.bouton-commander { grid-area: bouton-commander;
+    color: white;
+    background-color: #686868;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    font-weight: bold;
+    font-size: 18px;
+    justify-content: center;
+    padding: 15px 20px 20px 20px;
+    border-radius: 30px 30px 30px 30px;
+    width: 100px;
+    height: 35px;
+    padding:11px 40px 0px 40px;
+    margin: 40px 0px 40px 90px;}
+        
+.bouton-commander:hover{
+background-image: linear-gradient(0deg,rgba(168, 129, 216, 0.9),rgba(247, 154, 220, 0.9));
+box-shadow: 0 5px 20px rgb(87, 85, 85) ;}
