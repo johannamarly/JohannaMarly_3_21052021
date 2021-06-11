@@ -4,24 +4,13 @@
     object-fit: cover;
     
 }   
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 0.4fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "arrow logo-entete";
-  }
-  
-  .arrow { 
-      grid-area: arrow; 
-    padding: 30px 17px 30px 30px;
-    font-size: 20px;}
-  
-.logo-entete { 
-      grid-area: logo-entete; 
-      padding: 20px 66px 30px 30px;
-    }
+.logo-container{
+    
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 10px;}
+
+
 .menu-title{
     font-family: "Shrikhand";
     font-size: 25px;
@@ -33,18 +22,45 @@
     border-radius: 30px 30px 0px 0px;
 }
 
+
+
 .menu-title > i{
    
     font-size: 30px;
     position: absolute;
     top: 40;
     right: 45;
+    cursor: pointer;
+    background-clip: text;
 
 }
-.menu-title i:hover{
-    background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));;
-    
-}
+i.fa-heart:hover {
+   
+    font-style: normal;
+    font-family: fontawesome;
+    background: -webkit-linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: 2s ease 0s infinite normal none running fontgradient;
+    -webkit-animation: fontgradient 2s ease infinite;
+    -moz-animation: fontgradient 2s ease infinite;
+    animation: fontgradient 2s ease infinite;  
+    }
+    @-webkit-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @-moz-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @keyframes fontgradient { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }  
 
           
 .entrées-titre { 
@@ -59,7 +75,32 @@
     padding-top: 3px;
     width: 40px;
 }
+.plat-titre { 
+    margin: 20px 0px 20px 0px ;
+    padding: 15px 0px 0px 10px;
     
+}
+.plat-titre::after{
+    content: "";
+    border-bottom: 2px solid #99e2d0;
+    display: block;
+    padding-top: 3px;
+    width: 40px;
+}
+      
+
+      
+.dessert-titre { grid-area: dessert-titre;
+    margin: 20px 0px 20px 0px ;
+    padding: 15px 0px 0px 10px;
+}
+.dessert-titre::after{
+    content: "";
+    border-bottom: 2px solid #99e2d0;
+    display: block;
+    padding-top: 3px;
+    width: 40px;
+}      
 .plat {
     cursor: pointer;
     border-radius: 20px;
@@ -134,23 +175,149 @@
     }
     
     
-.plat:hover .plat-content {
+.un:hover .plat-content {
         width: 75%;
         
     }
-.plat:hover .plat-validate > i{
+.un:hover .plat-validate > i {
         
-    animation: rotate 0.5s both;
+    animation: rotate 1s both;
         
     }
     
-.plat:hover > .plat-validate {
+.un:hover .plat-validate {
         visibility: visible;
         transition: 0s visibility;
         
     
     }
 
+.deux:hover .plat-content {
+    width: 75%;
+        
+}
+.deux:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.deux:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.trois:hover .plat-content {
+    width: 75%;
+        
+}
+.trois:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.trois:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+.quatre:hover .plat-content {
+    width: 75%;
+        
+}
+.quatre:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.quatre:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.cinq:hover .plat-content {
+    width: 75%;
+        
+}
+.cinq:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.cinq:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.six:hover .plat-content {
+    width: 75%;
+        
+}
+.six:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.six:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.sept:hover .plat-content {
+    width: 75%;
+        
+}
+.sept:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.sept:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.huit:hover .plat-content {
+    width: 75%;
+        
+}
+.huit:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.huit:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
+
+.neuf:hover .plat-content {
+    width: 75%;
+        
+}
+.neuf:hover .plat-validate > i {
+        
+    animation: rotate 1s both;
+        
+ }
+    
+.neuf:hover .plat-validate {
+    visibility: visible;
+    transition: 0s visibility;
+        
+}
 @keyframes rotate {
         from{
             transform: rotate(0deg);
@@ -171,29 +338,3 @@
         }
     }
           
-.plat-titre { 
-        margin: 20px 0px 20px 0px ;
-        padding: 15px 0px 0px 10px;
-        
-    }
-.plat-titre::after{
-        content: "";
-        border-bottom: 2px solid #99e2d0;
-        display: block;
-        padding-top: 3px;
-        width: 40px;
-    }
-          
-    
-          
-.dessert-titre { grid-area: dessert-titre;
-        margin: 20px 0px 20px 0px ;
-        padding: 15px 0px 0px 10px;
-    }
-.dessert-titre::after{
-        content: "";
-        border-bottom: 2px solid #99e2d0;
-        display: block;
-        padding-top: 3px;
-        width: 40px;
-    }   

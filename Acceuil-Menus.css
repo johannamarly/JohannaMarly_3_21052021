@@ -4,7 +4,6 @@
     
 }
 
-
   .grid-container-footer {
     display: grid;
     background-color: rgb(41, 39, 39);
@@ -45,10 +44,15 @@
     margin-left: 30px;
     margin-bottom: 7px }
       
-.contact { 
+.contact  { 
     grid-area: contact;
      margin-left: 30px;
-    margin-bottom: 40px }
+    margin-bottom: 40px;
+}
+.contact a{
+    color: white;
+    text-decoration: none;
+}
 
 .grid-container-footer i{
     color: white;

@@ -1,7 +1,11 @@
 body{
     font-family: "roboto";
+  
 }
 
+.logo-container{
+    border: solid transparent;
+    text-align: center;}
 
 .search-input{
      font-family:"FontAwesome", "roboto";
@@ -130,15 +134,14 @@ a:hover{
     position: absolute;
     font-size: 20px;
 }
-.fas{
-    font-weight: bold;
-}
+
 .aside-text{
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 14px
 }
+
 
 .img-btn{
     position: absolute ;
@@ -231,24 +234,8 @@ a:hover{
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.la-palette i{
-    margin-left: 132px;
-    font-size: 31px;
-}
-.la-note i{
-    margin-left: 163px;
-    font-size: 31px;
-}
-.a-la-française i{
-    margin-left: 152px;
-    font-size: 31px;
-    margin-bottom: 9px;
-}
-.le-delice i{
-    margin-left: 122px;
-    font-size: 31px;
-       
-}
+
+
 .restaurant-title{
     margin-left: 20px;
 }
@@ -260,29 +247,121 @@ a:hover{
     font-weight: 200;
     font-size: 18px;
 }
-i.far {
+
+.loader{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: loader .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
+    z-index: 10000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader-container{
+display: flex;
+    width: 5rem;
+    justify-content: space-between;}
+
+.loader-1{
+    background-color: #9356dc;
+    animation: jumping 1s;
+}
+.loader-2{
+    background-color: #ff79da;
+    animation: jumping 1s;
+    animation-delay: .25s;
+}
+.loader-3{
+    background-color: #99e2d0;
+    animation: jumping 1s;
+    animation-delay: .5s;
+}
+
+.loader-item{
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    
+}
+@keyframes jumping {
+    0%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(.5rem);
+    }
+    75%{
+        transform: translateY(-.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+    
+}
+@keyframes loader {
+    to{
+        opacity: 0;
+        z-index: -1;
+    }
+    
+}
+.place-name{
+    position: relative;
+    margin-left: 20px;
+    padding-bottom: 13px;
+    font-weight: 200;
+    font-size: 18px;
+}
+.place-name i{
+    position: absolute;
+    top: -19px;
+    right: 20;
     font-size: 2rem;
+    cursor: pointer;
+    background-clip: text;
+ 
+}
+
+i.fa-heart:hover {
+   
     font-style: normal;
     font-family: fontawesome;
-  }
-  
-  .far:before {
-    color: transparent;
-    position: absolute;
-    bottom: 22;
-    right: 20;
-    background-clip: text;
+    background: -webkit-linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
     -webkit-background-clip: text;
-    background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));
-    cursor: pointer;
-   
+    -webkit-text-fill-color: transparent;
+    animation: 2s ease 0s infinite normal none running fontgradient;
+    -webkit-animation: fontgradient 2s ease infinite;
+    -moz-animation: fontgradient 2s ease infinite;
+    animation: fontgradient 2s ease infinite;  
+    }
+    @-webkit-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @-moz-keyframes fontgradient {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }
+    @keyframes fontgradient { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+    }  
     
-  }
+              
 
 
-
-
-      
+              
+        
 
 
     
