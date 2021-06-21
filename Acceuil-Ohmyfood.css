@@ -80,7 +80,7 @@ input::placeholder{
     display: flex;
     flex-direction: column;
     padding: 15px;
-    margin: 10px 5px
+   
 }
 .aside-title{
     font-size: 25px;
@@ -145,8 +145,8 @@ a:hover{
 
 .img-btn{
     position: absolute ;
-    top: 15;
-    right: 15;
+    top: 15px;
+    right: 15px;
     background: #99e2d0;
     color: #2c9c81;
     padding: 3px 10px;
@@ -161,9 +161,10 @@ a:hover{
 .grid-container-restaurants {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2% 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     margin-top: 40px;
+    width: 100%;
     font-family: "roboto";
     background-color: rgb(243, 240, 240);
     grid-template-areas:
@@ -186,7 +187,6 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    margin:auto;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
         
@@ -198,7 +198,6 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    margin:auto;
     margin-top: 20px;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
@@ -210,10 +209,9 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    margin:auto;
     margin-top: 20px;
     background-color: white;
-    border-radius: 0px 0px 20px 20px;
+    margin-bottom: 15px;
 }
       
 .le-delice { 
@@ -221,14 +219,13 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    margin:auto;
     background-color: white;
     border-radius: 0px 0px 20px 20px;
     margin-bottom: 9px;
 }
       
 .grid-container-restaurants img{
-    width: 320px;
+    width: 100%;
     height:180px;
     margin-bottom: 20px;
     object-fit: cover;
@@ -237,15 +234,11 @@ a:hover{
 
 
 .restaurant-title{
-    margin-left: 20px;
+    margin-bottom: 3px;
 }
 
-.place-name{
-    position: relative;
-    margin-left: 20px;
-    padding-bottom: 13px;
-    font-weight: 200;
-    font-size: 18px;
+.separator{
+    flex-grow: 1;
 }
 
 .loader{
@@ -312,52 +305,55 @@ display: flex;
     }
     
 }
+.restaurant-container{
+    padding: 2px 16px;
+}
 .place-name{
-    position: relative;
-    margin-left: 20px;
+    display: flex;
     padding-bottom: 13px;
     font-weight: 200;
     font-size: 18px;
-}
-.place-name i{
-    position: absolute;
-    top: -19px;
-    right: 20;
-    font-size: 2rem;
-    cursor: pointer;
-    background-clip: text;
- 
+    
 }
 
-i.fa-heart:hover {
+
+
+
+    .heart-animation-container{
+        position: relative;
+        cursor: pointer;
+        width: fit-content;
+    }
+    .heart{
+        font-size: 2rem;
+    }
+    .heart-animation-forground{
+        
+
+    }
+    .heart-animation-background{
+        position: absolute;
+        color: transparent;
+        z-index: -2;
+
+    }
+    .heart-animation-background::before{
+        background: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
+         -webkit-background-clip: text;
+    }
+    .white-mask{
+        position: absolute;
+        z-index: -1;
+        background-color: white;
+        height: 2rem;
+        width: 2rem;
+        transition: height 1s ease;
+    }
+    .heart-animation-container:hover .white-mask{
+        height: 0px;
+    }
    
-    font-style: normal;
-    font-family: fontawesome;
-    background: -webkit-linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: 2s ease 0s infinite normal none running fontgradient;
-    -webkit-animation: fontgradient 2s ease infinite;
-    -moz-animation: fontgradient 2s ease infinite;
-    animation: fontgradient 2s ease infinite;  
-    }
-    @-webkit-keyframes fontgradient {
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }
-    @-moz-keyframes fontgradient {
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }
-    @keyframes fontgradient { 
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }  
     
-              
 
 
               

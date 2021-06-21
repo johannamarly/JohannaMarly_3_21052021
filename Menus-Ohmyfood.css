@@ -5,15 +5,26 @@
     
 }   
 .logo-container{
-    
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
     padding-bottom: 20px;
-    padding-top: 10px;}
+    padding-top: 10px;
+    margin-right: 39px;}
+   
 
+.logo-container i{
+    color:black;
+    margin-top: 10px;
+    
+    
+    
+}
 
 .menu-title{
+    display: flex;
+    justify-content: space-between;
     font-family: "Shrikhand";
-    font-size: 25px;
+    font-size: 23px;
     padding: 38px 0 0px 20px;
     position: relative;
     top: -25px;
@@ -22,17 +33,16 @@
     border-radius: 30px 30px 0px 0px;
 }
 
-
+i.fa-heart{
+    margin-right: 40px;
+}
 
 .menu-title > i{
    
-    font-size: 30px;
-    position: absolute;
-    top: 40;
-    right: 45;
+    font-size: 2rem;
     cursor: pointer;
     background-clip: text;
-
+    margin-left: 55px;
 }
 i.fa-heart:hover {
    
@@ -41,13 +51,14 @@ i.fa-heart:hover {
     background: -webkit-linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: 2s ease 0s infinite normal none running fontgradient;
-    -webkit-animation: fontgradient 2s ease infinite;
-    -moz-animation: fontgradient 2s ease infinite;
-    animation: fontgradient 2s ease infinite;  
+    animation: 2s ease 0s  normal none  fontgradient;
+    -webkit-animation: fontgradient 2s ease ;
+    -moz-animation: fontgradient 2s ease ;
+    animation: fontgradient 2s ease ;  
+    
     }
     @-webkit-keyframes fontgradient {
-    0%{background-position:0% 92%}
+    100%{background-position:0% 92%}
     50%{background-position:100% 9%}
     100%{background-position:0% 92%}
     }
@@ -88,7 +99,9 @@ i.fa-heart:hover {
     width: 40px;
 }
       
-
+.restaurant-container{
+    padding: 2px 5px;
+}
       
 .dessert-titre { grid-area: dessert-titre;
     margin: 20px 0px 20px 0px ;
@@ -337,4 +350,7 @@ i.fa-heart:hover {
             opacity:1;
         }
     }
-          
+    .btn-container{
+        text-align: center;
+    }      
+    
