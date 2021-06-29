@@ -1,5 +1,6 @@
 body{
     font-family: "roboto";
+    
   
 }
 
@@ -9,8 +10,9 @@ body{
 
 .search-input{
      font-family:"FontAwesome", "roboto";
+     width: 100%;
+     
 }
-
 input {
     font-size: 17px;
     padding: 20px 75px 20px 75px;
@@ -71,7 +73,7 @@ input::placeholder{
 }
 .bouton-explorer:hover{
     background-image: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9));
-    box-shadow: 0 5px 20px rgb(87, 85, 85) ;
+    box-shadow: 0 5px 20px rgb(65, 63, 63) ;
 }
    
     
@@ -105,7 +107,7 @@ input::placeholder{
     font-family: "Roboto", sans-serif;
     color: #000;
     font-weight: bold;
-    padding: 27px 15px;
+    padding: 27px 27px;
     box-shadow: 0 5px 15px 0 #c3c3c3;
 }
 a:hover{
@@ -113,17 +115,17 @@ a:hover{
 }
 .aside-circle{
     position: absolute;
-    left: 17px;
-    margin-top: -9px;
+    left: 3px;
+    margin-top: -7px;
     background: #9356dc;
     border-radius: 100%;
     color: #fff;
     height: 21px;
     width: 10px;
     line-height: 1.67;
-    padding: 6px 10px;
+    padding: 8px 12px;
     font-weight: bold;
-    margin-left: 5px;
+    margin-left: 7px;
 }
 .aside-icon{
     display: flex;
@@ -161,12 +163,11 @@ a:hover{
 .grid-container-restaurants {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 2% 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr 1fr;
     gap: 0px 0px;
     margin-top: 40px;
-    width: 100%;
+    
     font-family: "roboto";
-    background-color: rgb(243, 240, 240);
     grid-template-areas:
         "restaurant"
         "la-palette"
@@ -177,8 +178,9 @@ a:hover{
       
 .restaurant { 
     grid-area: restaurant;
-    padding-top: 50px;
-    margin-left: 20px;
+    padding-top: 34px;
+    
+    padding-left: 27px;
     font-size: 25px;
     font-weight: 900;
 }
@@ -187,8 +189,12 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
+    width: 100%;
+    height: 90%;
+    border-bottom: solid transparent;
+    -webkit-box-shadow: 0px 12px 20px 3px rgba(104, 101, 101, 0.58); 
+    box-shadow: 0px 12px 20px 3px rgba(170, 169, 169, 0.38);
+    border-radius: 20px 20px 20px 20px;
         
 }
      
@@ -197,10 +203,13 @@ a:hover{
     grid-area: la-note;
     font-family: "roboto";
     font-size: 20px;
+    width: 100%;
+    height: 90%;
     font-weight: bold;
     margin-top: 20px;
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
+    -webkit-box-shadow: 0px 12px 20px 3px rgba(104, 101, 101, 0.58); 
+    box-shadow: 0px 12px 20px 3px rgba(170, 169, 169, 0.38);
+    border-radius: 20px 20px 20px 20px;
         
 }
       
@@ -209,9 +218,12 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
+    width: 100%;
+    height: 90%;
+    -webkit-box-shadow: 0px 12px 20px 3px rgba(104, 101, 101, 0.58); 
+    box-shadow: 0px 12px 20px 3px rgba(170, 169, 169, 0.38);
     margin-top: 20px;
-    background-color: white;
-    margin-bottom: 15px;
+    border-radius: 20px 20px 20px 20px;
 }
       
 .le-delice { 
@@ -219,9 +231,13 @@ a:hover{
     font-family: "roboto";
     font-size: 20px;
     font-weight: bold;
-    background-color: white;
-    border-radius: 0px 0px 20px 20px;
-    margin-bottom: 9px;
+    width: 100%;
+    height: 90%;
+    -webkit-box-shadow: 0px 12px 20px 3px rgba(104, 101, 101, 0.58); 
+    box-shadow: 0px 12px 20px 3px rgba(170, 169, 169, 0.38);
+    border-radius: 20px 20px 20px 20px;
+    margin-bottom: 7px;
+    margin-top: 15px;
 }
       
 .grid-container-restaurants img{
@@ -316,41 +332,37 @@ display: flex;
     
 }
 
-
-
-
-    .heart-animation-container{
-        position: relative;
-        cursor: pointer;
-        width: fit-content;
+.heart-animation-container{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 15px;
     }
-    .heart{
-        font-size: 2rem;
+.heart{
+    font-size: 2rem;
     }
-    .heart-animation-forground{
-        
 
-    }
-    .heart-animation-background{
-        position: absolute;
-        color: transparent;
-        z-index: -2;
+.heart-animation-background{
+    position: absolute;
+    color: transparent;
+    z-index: -2;
 
     }
-    .heart-animation-background::before{
-        background: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
-         -webkit-background-clip: text;
+.heart-animation-background::before, .heart-animation-forground::before{
+    background: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
+    -webkit-background-clip: text;
     }
-    .white-mask{
-        position: absolute;
-        z-index: -1;
-        background-color: white;
-        height: 2rem;
-        width: 2rem;
-        transition: height 1s ease;
+.white-mask{
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    transition: height 1s ease;
     }
-    .heart-animation-container:hover .white-mask{
-        height: 0px;
+.heart-animation-container:hover .white-mask{
+    height: 0px;
     }
    
     

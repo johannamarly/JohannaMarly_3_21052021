@@ -1,3 +1,4 @@
+
 .image-entete img{
     width: 100%;
     height: 267px;
@@ -15,9 +16,6 @@
 .logo-container i{
     color:black;
     margin-top: 10px;
-    
-    
-    
 }
 
 .menu-title{
@@ -31,11 +29,40 @@
     border-top: solid white;
     background-color: white;
     border-radius: 30px 30px 0px 0px;
+    
 }
+.heart-animation-container{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 15px;
+    }
+.heart{
+    font-size: 2rem;
+    }
 
-i.fa-heart{
-    margin-right: 40px;
-}
+.heart-animation-background{
+    position: absolute;
+    color: transparent;
+    z-index: -2;
+
+    }
+.heart-animation-background::before, .heart-animation-forground::before{
+    background: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
+    -webkit-background-clip: text;
+    }
+.white-mask{
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    transition: height 1s ease;
+    }
+.heart-animation-container:hover .white-mask{
+    height: 0px;
+    }
 
 .menu-title > i{
    
@@ -44,34 +71,6 @@ i.fa-heart{
     background-clip: text;
     margin-left: 55px;
 }
-i.fa-heart:hover {
-   
-    font-style: normal;
-    font-family: fontawesome;
-    background: -webkit-linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: 2s ease 0s  normal none  fontgradient;
-    -webkit-animation: fontgradient 2s ease ;
-    -moz-animation: fontgradient 2s ease ;
-    animation: fontgradient 2s ease ;  
-    
-    }
-    @-webkit-keyframes fontgradient {
-    100%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }
-    @-moz-keyframes fontgradient {
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }
-    @keyframes fontgradient { 
-    0%{background-position:0% 92%}
-    50%{background-position:100% 9%}
-    100%{background-position:0% 92%}
-    }  
 
           
 .entrées-titre { 
