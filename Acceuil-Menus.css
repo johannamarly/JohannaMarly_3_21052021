@@ -1,11 +1,56 @@
 
-
+body{
+    margin: 1;
+}
 .logo-ohmyfood img {
     padding: 20px 30px 20px 46px;
     margin:0px 50px 0px 50px;
     
 }
+.heart-animation-container{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 15px; 
+    
+    }
+.heart{
+    font-size: 2rem;
+   
+    }
 
+.heart-animation-background{
+    position: absolute;
+    color: transparent;
+    z-index: -2;
+
+    }
+.heart-animation-background::before, .heart-animation-forground::before{
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    -webkit-background-clip: text;
+    
+}
+
+.white-mask{
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    transition: height 1s ease;
+    
+    
+    }
+.heart-animation-container:hover .white-mask{
+    height: 0px;
+
+    }
+.heart-animation-forground:hover{
+    
+    opacity: 0;
+    
+}
   .grid-container-footer {
     display: grid;
     background-color: rgb(41, 39, 39);

@@ -361,11 +361,47 @@ display: flex;
     font-weight: 200;
     font-size: 18px;
     
+    
 }
 
-
-
+.heart-animation-container{
+    position: relative;
+    cursor: pointer;
+    width: fit-content;
+    padding-right: 10px;
+    padding-bottom: 15px; 
     
+    }
+.heart{
+    font-size: 2rem;
+   
+    }
+
+.heart-animation-background{
+    position: absolute;
+    color: transparent;
+    z-index: -2;
+
+    }
+.heart-animation-background::before, .heart-animation-forground::before{
+    background: linear-gradient(0deg,rgba(158, 113, 213, 0.9),rgba(243, 151, 216, 0.9)) 5% 5% / 300% 300%;
+    -webkit-background-clip: text;
+    }
+.white-mask{
+    position: absolute;
+    z-index: -1;
+    background-color: white;
+    height: 2rem;
+    width: 2rem;
+    transition: height 1s ease;
+    
+    }
+.heart-animation-container:hover .white-mask{
+    height: 0px;
+   border:transparent;
+   outline: 0;
+    }
+   
     
 
 
