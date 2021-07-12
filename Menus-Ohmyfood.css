@@ -120,7 +120,9 @@
 .plat-title, .plat-description {
     margin: 4px 0px;
 }
-    
+.plat-title {
+    white-space: nowrap;
+}    
 .plat-description {
     display: flex;
 }
@@ -331,4 +333,5 @@
     .btn-container{
         text-align: center;
     }      
+
     
