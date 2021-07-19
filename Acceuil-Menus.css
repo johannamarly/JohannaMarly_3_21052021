@@ -1,7 +1,10 @@
 
 body{
     margin: 1px;
+    width: 100%;
 }
+
+
 .logo-ohmyfood img {
     padding: 20px 0px 20px 0px;
     margin:0px 50px 0px 50px;

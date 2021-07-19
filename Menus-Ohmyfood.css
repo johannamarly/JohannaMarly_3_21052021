@@ -1,5 +1,6 @@
 .body{
     margin: 0px 2px;
+    width: 100%;
 }
 
 .image-entete img{
@@ -336,10 +337,10 @@
     }      
 
     h1{
-        font-size: 23px;
+        font-size: 25px;
         margin: 0;
     }
-    h2{
-        margin: 0;
-        font-size: 16px;
-    }
+h2{
+    font-size: 20px;
+}
+    

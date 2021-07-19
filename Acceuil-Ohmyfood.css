@@ -1,7 +1,14 @@
 body{
     font-family: "roboto";
     margin: 0;
+    width: 100%;
   
+}
+h2{ font-size: 23px;
+}
+h3{
+    font-size: 19px;
+    font-weight: 100;
 }
 
 .logo-container{
@@ -365,6 +372,9 @@ display: flex;
     font-weight: 200;
     font-size: 18px;
     
+}
+.restaurant h2{
+    font-size: 30px;
 }
 
 
